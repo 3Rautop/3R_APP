@@ -14,12 +14,10 @@ CLIENT_SECRET = "9ckYUaWxlzI9v1P99pmJLrF6BnrEFqPV" # <--- SUA Secret Key REAL
 REDIRECT_URI = "https://threer-app.onrender.com/callback" # A URL que o ML vai redirecionar
 
 # O Code Verifier gerado pelo seu script pkce_generate.py.
-# Em uma aplicação mais robusta, este valor seria armazenado temporariamente
-# (ex: em uma sessão de usuário) para ser usado neste callback.
-# Para o seu teste manual, você já o tem localmente.
-# Se você quiser que o Render pegue o token, você teria que ter o Code Verifier aqui.
-# Por simplicidade, vamos apenas exibir o code.
-# CODE_VERIFIER = "bOAdg3lVr6utsysDyJUXqEAi4DYnkvwm7yhfcBP3oWw" # Você pode colar ele aqui, mas não é estritamente necessário para APENAS exibir o code.
+# Este valor é usado localmente no seu script get_token.py.
+# Não é estritamente necessário ter ele aqui no app.py do Render se o Render
+# for APENAS exibir o code para você copiar.
+# CODE_VERIFIER = "bOAdg3lVr6utsysDyJUXqEAi4DYnkvwm7yhfcBP3oWw" # Se quiser, cole-o aqui.
 
 @app.route('/')
 def home():
