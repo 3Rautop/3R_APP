@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorização Concluída!</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 700px; margin: auto; padding: 30px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #28a745; margin-bottom: 20px; }
+        p { font-size: 1.1em; line-height: 1.6; }
+        .code-box { background-color: #e9e9e9; padding: 20px; border-radius: 8px; margin: 25px auto; word-break: break-all; font-size: 1.2em; font-weight: bold; color: #0056b3; }
+        .instructions { margin-top: 30px; font-size: 0.95em; color: #555; }
+        .instructions strong { color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Sucesso na Autorização! 🎉</h1>
+        <p>Seu aplicativo foi autorizado pelo Mercado Livre.</p>
+        <p>O **código de autorização** que você precisa para obter o Access Token é:</p>
+        <div class="code-box">
+            <strong>{{ code }}</strong>
+        </div>
+        <p class="instructions">
+            <strong>Copie o código acima</strong> e use-o no seu script `get_token.py` (no seu computador)<br>
+            junto com o `Code Verifier` que você gerou e guardou.
+        </p>
+    </div>
+</body>
+</html>
